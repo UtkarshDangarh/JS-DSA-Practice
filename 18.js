@@ -4,9 +4,9 @@ var person = {
   fullName: "Utkarsh Dangarh",
   age: 51,
   address: {
-    locality: "Pandey Mohalla, Brahmin Nehre ke pas",
-    city: "Garoth",
-    state: "MP",
+    locality: "Gokuldham Society, Goregaoon East",
+    city: "Mumbai",
+    state: "Maharastra",
   },
 };
 

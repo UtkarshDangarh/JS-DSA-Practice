@@ -4,7 +4,7 @@ var person = {
   name: "Utkarsh",
   age: 25,
   Job: "React Developer",
-  address: { city: "Garoth", State: "MP" },
+  address: { city: "Indore", State: "MP" },
 };
 
 //Printing all values from the object

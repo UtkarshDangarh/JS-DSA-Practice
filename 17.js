@@ -8,6 +8,6 @@ var students = [
   { name: "Eve", age: 15, grade: 75 },
 ];
 
-const highPerformers = students.filter((students) => students.grade >= 80);
+const highPerformers = students.filter((student) => student.grade >= 80);
 
 console.log(highPerformers);
