@@ -1,12 +1,14 @@
-//Simple Callback Function: Write a function processData that takes two arguments: a data string and a
-//callback function. processData should call the callback function with the data string in uppercase.
-//Test it by passing a callback that logs the result.
+//Copying Arrays: Write a function copyArray that takes an array as input and returns a new array that is a
+//copy of the input array using the spread operator. Modify one element in the copied array to verify that
+//the original array is not affected.
 
-function processData(str, cb) {
-  cb = () => {
-    console.log(str.toUpperCase());
-  };
-  cb();
+const numbers = [1, 2, 3, 4, 5];
+function copyArray(arr) {
+  let newArr = [...arr];
+  newArr[2] = 55; //This will not modify the original array because Primitive values (like numbers, strings, booleans) are copied by value not by reference
+  return newArr;
 }
 
-processData("goku");
+console.log(numbers);
+console.log(copyArray(numbers));
+console.log(numbers);
