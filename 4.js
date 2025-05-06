@@ -1,6 +1,7 @@
 //Create an object car with properties make, model, and year, then print them.
 //Add a new property color to the car object, then delete the year property.
 
+//Using Object literals
 var car = {
   model: "Creta",
   maker: "Hyundai",

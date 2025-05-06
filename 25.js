@@ -11,12 +11,12 @@ const person = {
 const student = {
   gender: "male",
 };
-
-// Using spread operator
-// The spread operator creates a new object with all properties from obj1 and then overwrite or add properties from obj2
 const newObj = Object.assign(person, student);
 
 console.log(newObj);
+
+// Using spread operator
+// The spread operator creates a new object with all properties from obj1 and then override or add properties from obj2
 
 function mergeObjects(obj1, obj2) {
   return { ...obj1, ...obj2 };

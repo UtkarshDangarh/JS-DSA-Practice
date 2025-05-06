@@ -11,11 +11,11 @@ function createCounter() {
 }
 
 const counter = createCounter();
-counter();
-counter();
-counter();
+counter(); //Output 1
+counter(); //Output 2
+counter(); //Output 3
 //Created counter because createCounter() returns a function (a closure), and we need to store that
-// returned function in counter to call it later.
+//returned function in counter to call it later.
 
 //if we call createCounter()() directly instead of storing it,
 //Every time we call createCounter(), a new count variable is created and reset to 0.

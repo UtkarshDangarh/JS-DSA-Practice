@@ -3,7 +3,7 @@
 // try logging counter outside the loop and note the result. Repeat this with var to observe the difference.
 
 // for (let i = 0; i < 3; i++) {
-//   const counter = i;
+//   let counter = i;
 //   console.log(counter);
 // }
 //this will not print and will give reference error as let and const are block scoped
@@ -14,5 +14,5 @@ for (let i = 0; i < 3; i++) {
   console.log(counter2);
 }
 
-//this will print the last value set to counter2 varibale i.e. 2
+// this will print the last value set to counter2 varibale i.e. 2
 console.log(counter2);

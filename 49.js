@@ -2,27 +2,14 @@
 //returns a function that, when called, decrements and logs the countdown from n to 0. Once the countdown
 //reaches 0, the function should log "Countdown complete" instead of going negative.
 
-// function createCountdown(n) {
-//   return function countLog() {
-//     if (n >= 0) {
-//       for (let i = n; i >= 0; i--) {
-//         console.log(i);
-//       }
-//       console.log("Countdown complete");
-//     } else {
-//       console.log(`${n} is in negative`);
-//     }
-//   };
-// }
-
 function createCountdown(n) {
   return function () {
-    if (n > 0) {
-      console.log(n);
-      n--;
-    } else {
+    if (n === 0) {
       console.log("Countdown Complete");
+      return;
     }
+    console.log(n);
+    n--;
   };
 }
 

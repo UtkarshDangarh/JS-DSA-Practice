@@ -1,4 +1,5 @@
-//Create an array of student objects (name, age, grade), then filter students with grades above 80.
+//Create an array of student
+// objects (name, age, grade), then filter students with grades above 80.
 
 var students = [
   { name: "Snandeep", age: "17", grade: 80 },

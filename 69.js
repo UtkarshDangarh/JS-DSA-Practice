@@ -18,6 +18,18 @@ const names = [
   "david",
 ];
 
+//Using for loop
+// function countStrings(names) {
+//   const result = {};
+
+//   for (const str of names) {
+//     result[str] = (result[str] || 0) + 1;
+//   }
+
+//   return result;
+// }
+
+//Using Reduce
 function occurance(arr) {
   return arr.reduce((acc, crr) => {
     acc[crr] = (acc[crr] || 0) + 1;

@@ -2,20 +2,22 @@
 // computed values (memoization) for faster computation.
 
 function createFactorial() {
-  let cache = {};
+  let cache = {}; //initializing a cache object, It's private due to closure
 
   function factorial(n) {
+    // Checking Cache: If n is already computed, return the stored value.
     if (n in cache) {
       return cache[n]; //this returns cached result if available
     }
+    // Base Case for recurson: factorial(0) = factorial(1) = 1.
     if (n === 0 || n === 1) {
       return 1;
     }
 
-    cache[n] = n * factorial(n - 1); //this stores result in cache
+    cache[n] = n * factorial(n - 1); //Compute Factorial Recursively, then store it in cache.
     return cache[n];
   }
-  return factorial;
+  return factorial; //hence we are returning the factorial function this will have access to cache (Closure)
 }
 
 const fact = createFactorial();
@@ -26,12 +28,8 @@ console.log(fact(6));
 console.log(fact(7));
 console.log(fact(8));
 
-// createFactorial() initializes a cache object inside it.
-
 // cache is private due to closure and stores computed factorial values.
 
-// Base Case: factorial(0) = factorial(1) = 1.
-// Check Cache: If n is already computed, return the stored value.
 // Compute Factorial Recursively: n * factorial(n - 1), then store it in cache.
 // Return factorial function.
 // Keeping cache alive using a closure.

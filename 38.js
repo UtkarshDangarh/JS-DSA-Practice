@@ -8,8 +8,8 @@ function makeAdder(x) {
   };
 }
 
-const add = makeAdder(5);
+const add = makeAdder(5); //x=5
 //Here add will accepet arguments for inner function, because makeAdder is returning
 //a function and we are storing it in add
-console.log(add(6));
-console.log(add(8));
+console.log(add(6)); //y = 6
+console.log(add(8)); //y = 8

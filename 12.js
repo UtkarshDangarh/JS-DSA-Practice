@@ -14,11 +14,18 @@ var arr = [1, 2, 3, 4, 5, 6, 7, 8];
 
 //Using filter
 
-var abc = arr.filter((ele) => ele % 2 === 0);
-// var abc = arr.filter(function (ele) {
-//   return ele % 2 === 0;
-// });
-console.log(abc);
+// var abc = arr.filter((ele) => ele % 2 === 0);
+
+// console.log(abc);
 
 //without creating a new array
-arr.filter((num) => num % 2 === 0).forEach((num) => console.log(num));
+var even = arr
+  .filter((num) => num % 2 === 0)
+  .forEach((num) => console.log(num));
+
+// arr.reduce((acc, crr) => {
+//   if (crr % 2 === 0) {
+//     acc.push[crr];
+//   }
+//   return acc;
+// }, []);

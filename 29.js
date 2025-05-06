@@ -9,7 +9,7 @@ function animal(name, species, sound) {
   // (this.speak = () => `the ${name} says ${sound}`);
 }
 
-// Adding speak method to the prototype
+// Adding speak method to the prototype, this adds method to the original constructor method.
 
 animal.prototype.speak = function () {
   return `The ${this.species} says ${this.sound}`;

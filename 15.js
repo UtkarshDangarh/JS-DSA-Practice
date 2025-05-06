@@ -1,7 +1,7 @@
 //Use destructuring to extract values from an object and an array.
 
 var person = {
-  name: "Utkarsh",
+  firstName: "Utkarsh",
   age: 25,
   Job: "React Developer",
   address: { city: "Indore", State: "MP" },
@@ -12,18 +12,18 @@ var person = {
 
 // Destructure properties from the object
 const {
-  name,
+  firstName,
   age,
   address: { city },
 } = person;
 
 // Explanation:
-// - `name`, `age`, and `email` are directly extracted from `person`
+// - `firstName`, `age`, and `email` are directly extracted from `person`
 // - `city` is extracted from the nested `address` object
 
-console.log(name); // Alice
-console.log(age); // 30
-console.log(city); // Wonderland
+console.log(firstName); // Utkarsh
+console.log(age); // 25
+console.log(city); // Indore
 
 var arr = ["Mango", "Oranges", "Banana", "Guvava"];
 

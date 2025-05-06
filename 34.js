@@ -8,3 +8,5 @@ let name = "Utkarsh Dangarh";
 }
 
 console.log(name); //Will print Utkarsh Dangarh
+
+//Let creates block scope variable

@@ -12,8 +12,7 @@ const double = createMultiplier(2);
 const triple = createMultiplier(3);
 const quintuple = createMultiplier(5);
 
-console.log(double(4));
-console.log(double(2)); //This will not work as counter example from arlier solved question as we are passing argument
-//inside function it's making independent function call which did not happen in case of counter
+console.log(double(4)); //Output 8
+console.log(double(2)); //This will make an independent function call and output will be 2*2 = 4
 console.log(triple(5));
 console.log(quintuple(2));

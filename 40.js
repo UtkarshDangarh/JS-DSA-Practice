@@ -17,9 +17,9 @@ function outerFunc() {
 }
 
 const test = outerFunc(); //Calls outerFunc -> Calls innerFunc -> Returns innermostFunc
+//test hold the innerMostFunc, which just logs the value of a and b
 
 // console.log(test()); //If I do this it'll log the values and return undefined
-//The undefined comes from console.log(testFunc())
-//because test() does not return anything; it just logs values. hence to only log values of a and b call test()
+//because test() does not return anything;
 
-test();
+console.log(test());

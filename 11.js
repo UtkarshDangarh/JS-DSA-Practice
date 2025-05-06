@@ -1,9 +1,9 @@
 //Write a program that swaps two variables without using a third variable.
 
 function swap(num1, num2) {
-  num1 = num1 + num2;
-  num2 = num1 - num2;
-  num1 = num1 - num2;
+  num1 = num1 + num2; // Sum of both numbers
+  num2 = num1 - num2; //num2 will be sum - num2 i.e. num1
+  num1 = num1 - num2; // num1 = sum - new value of num2
 
   console.log("After swap: num1 =", num1, ", num2 =", num2);
 }
