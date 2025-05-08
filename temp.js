@@ -1,12 +1,13 @@
-//Convert a normal function to a curried version
-//Convert add(a, b, c) to add(a)(b)(c).
-
-function add(a) {
-  return function (b) {
-    return function (c) {
-      return a + b + c;
-    };
-  };
+function delay(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-console.log(add(1)(2)(12));
+async function showSteps() {
+  console.log("Step 1");
+  await delay(1000);
+  console.log("Step 2");
+  await delay(1000);
+  console.log("Step 3");
+}
+
+showSteps();
