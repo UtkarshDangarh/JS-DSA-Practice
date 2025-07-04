@@ -16,7 +16,8 @@ function withApply(fn, arr) {
 }
 
 //The null is being passed as the "this" value for the function being called — in this case, the sum function.
-//The function doesn’t use this at all.
+//The sum function is a regular function, not a method inside an object. The function doesn’t use this at all.
+// Hence the value of this doesn’t matter.
 //So, we can safely pass null (or even undefined) as the this context.
 //JavaScript won’t care, because this is never used inside the function.
 

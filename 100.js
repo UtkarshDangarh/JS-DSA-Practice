@@ -18,4 +18,5 @@ const user2 = {
 
 greet.call(user, "Dehradun");
 greet.call(user2, "New york");
-//Dehradun is the argument that greet function takes
+//First argument in call will be the object on which we've to call the greet method and 2nd one is
+//the argument that greet function takes
